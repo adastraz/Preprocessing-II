@@ -1,1 +1,45 @@
 // Navigation Styles here
+.header{
+    header{
+        .flex(row,space-between,center);
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding:3% 0 3% 0;
+        @media @mobile {
+            .flex(column,center,center);
+        }
+        nav{
+            .flex(row,space-evenly,center);
+            width:50%;
+            @media @mobile{
+                .flex(row,space-evenly,center);
+                width:100%;
+                padding:5% 0;
+            }
+            a{
+                .nav(ivory,teal);
+            }
+        }
+    }
+    border-bottom:dashed 2px @navigation-border;
+}
+img{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    .flex(row,center,center);
+    @media @mobile{
+        padding:0 5%;
+    }
+}
+.oops{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    border-bottom:2px dashed @navigation-border;
+    @media @mobile{
+        padding:5% 5%;
+    }
+}
